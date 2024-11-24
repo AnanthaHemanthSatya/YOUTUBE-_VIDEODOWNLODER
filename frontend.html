@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vdownload - Free YouTube Video Downloader</title>
+    <link rel="stylesheet" href="frontend.css">
+    <script src="frontend.js" defer></script> <!-- Link to the external JS file -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Vdownload</div>
+            <nav>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><button class="signup-btn">Sign Up</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <h1 class="subheading">Free YouTube Video Downloader</h1>
+            <p>Paste your URL below to download instantly</p>
+            <form id="downloadForm">
+                <input type="text" id="link" name="link" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ..." required>
+                <button type="submit">Download</button>
+            </form>
+            <p id="status"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Vdownload - Licensed by Jhanesh V</p>
+    </footer>
+</body>
+</html>

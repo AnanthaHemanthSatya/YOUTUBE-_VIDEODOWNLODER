@@ -1,0 +1,180 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f9f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #FF0000; /* Changed to red */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    font-size: 55px; /* Increased font size */
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.signup-btn {
+    background-color: #242fc100;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #25d618;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    flex: 1;
+}
+
+.main-content {
+    padding: 30px;
+    width: 500px;
+    border-radius: 15px; /* Rounded corners */
+    background-color: transparent; /* No background */
+}
+
+/* Subheading and line */
+.subheading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Input form */
+form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 25px; /* Rounded input field */
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4); /* Focus shadow */
+}
+
+button[type="submit"] {
+    padding: 15px 20px;
+    background-color: #FF0000; /* Changed to red */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+    padding: 20px 0;
+    background-color: #f5f9f4;
+    width: 100%;
+}
+
+footer p {
+    color: #333; /* Darker color for footer text */
+}
+
+/* Status Message */
+#status {
+    margin-top: 20px;
+    font-weight: bold;
+    color: red;
+}
+/* Add this CSS to the existing styles */
+
+/* Keyframes for moving text animation */
+@keyframes move-placeholder {
+    0% {
+        text-indent: 0;
+    }
+    50% {
+        text-indent: 20px; /* Move 20px to the right */
+    }
+    100% {
+        text-indent: 0; /* Back to initial position */
+    }
+}
+
+/* Apply the animation to the input field */
+input[type="text"]::placeholder {
+    animation: move-placeholder 2s infinite ease-in-out;
+    color: #bbb;
+    font-style: italic;
+}
